@@ -1,224 +1,91 @@
 body{
     padding: 4%;
-    margin: 4%;
+    margin: 2%;
+    
 }
-p{
-    font-family: Arial, Helvetica, sans-serif;
+
+#main-doc{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    
 }
-li{
-    list-style: none;
-    margin-right: 10px;
+.main-section{
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.code{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: #2F4F4F;
+    color:#F5F5F5;
+    max-width: 100%;
+  
+    padding: 2%;
+}
+h1{
+    text-align: center;
 }
 a{
-    text-decoration: none;
-    color: black;
+   
+   text-decoration: none;
 }
+
 #navbar{
-    display: flex;
-    flex-direction: row;
-    position:fixed;
-    justify-content:flex-end;
-    background-color: cornflowerblue;
-    height: 50px;
-   align-items: center;
-   line-height: 20px;
-   font-size: 20px;
-   z-index: 1;
-   width: 84%;
-  
-   
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-items:center; 
- 
-}
-
-#welcome{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
     border: solid black 1px;
-    background: url('https://wallpaperaccess.com/full/2876582.jpg') no-repeat;
-    
-    background-size: cover;
-  height: 100vh;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-#about{
-    padding: 2%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    margin-top: 50px;
-}
-.about{
+    overflow:scroll;
+    height:340px;
   
+
+}
+#navbar a{
+
+
+padding: 10px;
+
+}
+@media (max-width:568px){
   
-  display:flex;
-  flex-direction: row;
 
-
-}
-#skill{
-display: flex;
-width: 70%;
-background-color:#DCDCDC;
-margin: 0 4% 0 4%;
-
-}
-#skill li{
-    margin-top: 10px;
-}
-
-#projects{
-   
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    position: relative;
-    margin-top: 250px;
-    
-    
-}
-#projects h1{
-    display: flex;
-    text-align: center;
-   
-    background-color:#5F9EA0;
-   height: 50px;
-   margin-top: 220px;
-  align-items: center;
-  justify-content: center;
-}
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4%;
-   justify-self: self-start;
-   grid-row-gap: 4%;
-   align-self:center;
+    #main-doc{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        width: 90%;
+        margin: auto;
+        
     }
-#contacts{
-   
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 40px;
-}
-#contacts div{
-    margin-bottom: 20px;
-    font-size: 120%;
-}
-#Project1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-  
-    border: solid black 1px; 
-    height: 100vh;
-}
-#Project2{
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-   
-    border: solid black 1px;
-}
-#Project3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid black 1px;
-}
-#Project4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid black 1px;
-}
-.btn{
-    cursor:pointer;
-}
-
-@media (max-width:600px) { 
-
+    .main-section{
+        margin: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     #navbar{
         display: flex;
-        flex-direction: row;
-        position:fixed;
-     
-        background-color: cornflowerblue;
-        height: 50px;
-       align-items:center;
-       justify-content: flex-start;
-     
-       line-height: 120%;
-       font-size: 120%;
-       z-index: 1;
-       max-width: 84%;.
-
+        flex-direction: column;
+        justify-content: center;
+        border: solid black 1px;
+        overflow-y:scroll;
+        overflow-x: hidden;
+        height:340px;
+        width: 90%;
+        word-break: break-word;
+      
     
-     }
-     
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        padding-left: 0%;
-         }
-    li{
-        list-style: none;
-        /*margin-right: 2%;*/
-       
     }
-    .about{
-  
-  
-        display:flex;
-        flex-direction:column;
-      
-      
-      }
-   
-    #skill{
-        display: flex;
-        width: 84%;
-        background-color:#DCDCDC;
-      
-        }
-        .container{
-            display: grid;
-            grid-template-columns: 1fr;
-           justify-self: self-start;
-           grid-row-gap: 4%;
-           align-self:center;
-            }
-            #contacts{
-   
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                padding: 40px;
-                margin-top: 50px;
-            }
 
- }
+    .code{
+        display: flex;
+        word-break: break-word;
+        background-color:#DCDCDC;
+        color:black;
+        width: 100%;
+      justify-content: center;
+        padding: 2%;
+        margin: 2%;
+    }  
+}
